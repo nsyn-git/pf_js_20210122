@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#e_list{
+      display: flex;
+    }
+    
+    .image_f{
+      background: url(../images/fed_m.jpg) no-repeat;
+      margin-right: 10px;
+      width: 250px;
+      height: 160px;
+    }
+    
+    .image_n{
+      background: url(../images/rafa_m.jpg) no-repeat;
+      width: 250px;
+      height: 160px;
+      margin-right: 10px;
+    }
+    
+    .image_j{
+      background: url(../images/joco_m.jpg) no-repeat;
+      width: 250px;
+      height: 160px;
+    }
+    
+    #msg{
+      color: red;
+    }
+    
+    .border{
+      border: 4px solid red;
+    }
+    
+    .border2{
+      border: 4px solid blue;
+    }
+    
+    .hidden{
+      display: none;
+    }
+    
+    .container2{
+      position:relative;
+      width:100%;
+      height:350px;
+    }
+    
+    #msg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	font-size:5em;
+	font-weight:bold;
+	color:#0091EA;
+	text-align:center;
+	width:500px;
+	height:100px;
+	animation: bound-anim 0.8s infinite;
+}
+
+@keyframes bound-anim {
+	0%,100% {top: 0;transform: scale(1);}
+	30% {top: -25%;}
+	50% {transform: scale(1);}
+	90% {top: 0;transform: scale(1.1,0.8);}
+}
