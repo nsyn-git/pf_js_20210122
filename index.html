@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>テンプレート</title>
-  <link href="../../_common/images/favicon.ico" rel="shortcut icon">
+  <title>BIG3 CHALLENGE</title>
+  <link rel="icon" type="image/png" sizes="24x24" href="images/icon-24x24.png">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <style type="text/css">
@@ -13,23 +13,21 @@
 
 <body>
   <header>
-    <div class="container">
-      <h1>タイトル</h1>
-      <h2>サブタイトル</h2>
+    <div class="title">
     </div><!-- /.container -->
   </header>
   <main>
     <div class="container">
-      <section>
+      <!-- <section> -->
         <form action="" id="form1">
 
           <div id="screen">
-            名前を入力してください
+            【名前を入力してください】
             <p>
               <input type="text" name="y_name" id="c_name">
             </p>
             
-            <p>対戦相手を選んでください</p>
+            <p>【対戦相手を選んでください】</p>
             <div id="e_list">
               <div>
                 <label for="label_1">
@@ -50,67 +48,72 @@
                 <input type="radio" name="enemy" value="ジョコビッチ" id="label_3">ジョコビッチ
               </div>
             </div>
-            <input type="button" value="決定" id="n_button">
+            <div class="button_1">
+              <input type="button" value="決定" id="n_button">
+            </div>
           </div>
         </form>
 
                 <p></p>
 
       <div id="form2" class="hidden">
-        <table border="3" id="table">
-<!--
-          <tr>
-            <th></th>
-            <td>実表示</td>
-            <td>加算ポイント</td>
-            <td>差分ポイント</td>
-          </tr>
--->
-          <tr>
-            <th scope="row" id="you"></th>
-            <td id="y_point">0</td>
-<!--
-            <td id="y_point2">0</td>
-            <td id="rest">0</td>
--->
-          </tr>
-<!--
-          <tr>
-            <th></th>
-            <td>実表示</td>
-            <td>加算ポイント</td>
-            <td>合計ポイント</td>
-          </tr>
--->
-          <tr>
-            <th scope="row" id="enemy"></th>
-            <td id="e_point">0</td>
-<!--
-            <td id="e_point2">0</td>
-            <td id="total">0</td>
--->
-          </tr>
-        </table>
+        <div class="table_image">
+          <table border="3" id="table">
+            <!-- <tr>
+              <th></th>
+              <td>実表示</td>
+              <td>加算ポイント</td>
+              <td>差分ポイント</td>
+            </tr> -->
+  
+            <tr>
+              <th scope="row" id="you"></th>
+              <td id="y_point">0</td>
+  
+              <!-- <td id="y_point2">0</td>
+              <td id="rest">0</td> -->
+  
+            </tr>
+  
+            <!-- <tr>
+              <th></th>
+              <td>実表示</td>
+              <td>加算ポイント</td>
+              <td>合計ポイント</td>
+            </tr> -->
+  
+            <tr>
+              <th scope="row" id="enemy"></th>
+              <td id="e_point">0</td>
+  
+              <!-- <td id="e_point2">0</td>
+              <td id="total">0</td> -->
+  
+            </tr>
+          </table>
+          <div class="button_2">
+            <input type="button" value="サーブ！" id="s_button">
+            <input type="button" value="リセット" id="rs_button">
+          </div>
+        </div>
         
-        <p>
+        <div class="image_area">
           <img src="" alt="" id="a_image">
-        </p>
-        
-          <input type="button" value="サーブ！" id="s_button">
-          <input type="button" value="リセット" id="rs_button">
+          <div class="animationwrap hidden" id="anime">
+            <div class="animation"></div>
+            <div class="net"></div>
+            <div class="court"></div>
+          </div>
+        </div>
       </div>
         
 <!--        <p id="msg"></p>-->
          
         <div class="container2">
-          <p class="bound">
-            <p id="msg">
-              <span></span>
-            </p>
-          </p>
+          <span id="msg" class="tracking-in-contract-bck"></span>
         </div>
           
-      </section>
+      <!-- </section> -->
     </div><!-- /.container -->
   </main>
   <footer>
